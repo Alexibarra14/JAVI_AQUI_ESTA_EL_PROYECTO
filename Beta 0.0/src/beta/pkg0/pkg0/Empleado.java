@@ -8,8 +8,8 @@ package beta.pkg0.pkg0;
  *
  * @author aleja
  */
-public class Cliente extends typeusu {
-    public  String registrarUsuario(){
-        return "Cliente";
-    }
+public class Empleado extends typeusu {
+     public String registrarUsuario(){
+         return "Empleado";
+     }
 }

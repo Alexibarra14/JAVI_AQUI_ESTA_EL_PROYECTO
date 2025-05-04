@@ -11,27 +11,20 @@ package beta.pkg0.pkg0;
 public class Users extends Bison{
     private String user_name;
     private String password;
-    private Cliente tipousu;
-    
+    private typeusu tipousu;
     
     public Users(String user_name, String password, Cliente tipousu) {
         this.user_name = user_name;
         this.password = password;
         this.tipousu=tipousu;
-     
-                
         
     }
-    
-    
 
-   
-    
 
     public Users() {
-        this.user_name = getName();
-        this.password = "INGRESE AQUI SU PASSWORD";
-        this.tipousu= new Cliente();
+        this.user_name = "";
+        this.password = "";
+        this.tipousu= new typeusu();
         
     }
 
@@ -55,7 +48,7 @@ public class Users extends Bison{
         return tipousu;
     }
 
-    public void setTipousu(Cliente tipousu) {
+    public void setTipousu(typeusu tipousu) {
         this.tipousu = tipousu;
     }
     
@@ -63,8 +56,9 @@ public class Users extends Bison{
     @Override
     public String toString(){
        return "Usuario: "+user_name
-               + "\n"+
-            "tipo de usuario: "+ tipousu.register();
+               + "\n"+ 
+               typeusu.type() + "\n";
+            
        
     }
    
